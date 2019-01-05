@@ -1,0 +1,1986 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
+<script src="assets/js/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+
+
+
+<title>Toko - 2 Lights Studio Project</title>
+<style>
+body{
+	padding-top:70px;
+}
+.container{
+	max-width:1000px;
+}
+.jumbotron{
+	text-align:center;
+}
+.glyphicon-lg{
+	font-size:3em;
+	display:block;
+	margin:auto;
+	color:#3a87ad;
+}
+.green1{
+	background-color:#50c8cc;
+}
+.green2{
+	background-color:#35a4a7;
+}
+.yellow-box{
+	background-color:yellow;
+	box-shadow:inset 1px -1px 1px #444, inset -1px 1px 1px #444;
+}
+.panel{
+	border:10px solid #bce8f1;
+}
+.progress-bar{
+	min-width:2em;
+}
+.card{
+	background-color:papayawhip;
+	border:2px solid red;
+	padding:16px;
+	margin-bottom:24px;
+	line-height:3em;
+}
+
+.navbar-red-green{
+background-image: linear-gradient(to bottom,red 0,green 100%);
+}
+.panel-custom-color{
+	background-image:linear-gradient(to bottom,red 0,#c4e3f3 100%);	
+}
+</style>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand text-muted" href="#">Brand Link</a>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li class="active">
+					<a href="#">Unordered List Class="nav"</a>
+				</li>
+				<li>
+					<a href="#">About Toko</a>
+				</li>
+				<li class="dropdown">
+					<a data-toggle="dropdown" data-target="#">Dropdown Menu<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li class="dropdown-header">Submenu header
+						</li>
+						<li>
+							<a href="#">Dropdown menu item 1</a>
+						</li>
+						<li>
+							<a href="#">Dropdown menu item 2</a>
+						</li>
+						<li class="divider">
+						</li>
+						<li class="dropdown-header">Submenu header
+						</li>
+						<li>
+							<a href="#">Dropdown menu item 3</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#textModal" data-toggle="modal" data-target="#textModal">Sign Up</a>
+				</li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="#">Navbar-right</a>
+				</li>
+				<li>
+					<a href="#">About Toko</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="navbar navbar-default">
+	<div class="container">
+		<a class="navbar-brand text-muted" href="#">Brand Link</a>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li class="active">
+					<a href="#">This is Unordered List Class="nav"</a>
+				</li>
+				<li>
+					<a href="#">About Toko</a>
+				</li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="#">This is Unordered List Class="nav"</a>
+				</li>
+				<li>
+					<a href="#">About Toko</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="navbar navbar-inverse navbar-red-green">
+	<div class="container">
+		<a class="navbar-brand text-muted" href="#">-----Navbar-Inverse-----<span class="glyphicon glyphicon-heart"></span></a>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li class="active">
+					<a href="#">This is Unordered List Class="nav"</a>
+				</li>
+				<li>
+					<a href="#">About Toko</a>
+				</li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="#">This is Unordered List Class="nav"</a>
+				</li>
+				<li>
+					<a href="#">About Toko</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">Navbar with container-fluid <span class="glyphicon glyphicon-camera"></span>
+			</a>
+		</div>
+		<div>
+			<ul class="nav navbar-nav">
+				<li><a href="#">One</a></li>
+				<li><a href="#">Two</a></li>
+				<li class="active"><a href="#">Three</a></li>
+			</ul>
+		</div>
+	</div><!-- container -->
+</nav>
+
+<nav class="navbar navbar-default">
+	<div class="container">
+		<div class="navbar-header">
+			<img src="assets/images/mountain-logo.jpg" width="111" height="50" />
+		</div>
+		<div class="navbar-header" style="margin-left:20px;">
+			<a href="#" class="navbar-brand">
+				Navbar With Form
+			</a>
+		</div>
+		<ul class="nav navbar-nav">
+			<li><a href="#">One</a></li>
+			<form class="navbar-form navbar-right">
+				<div class="form-group">
+					<input type="text" class="form-control" />
+					<button type="submit" class="btn btn-default">
+						<span class="glyphicon glyphicon-search"></span>
+					</button>
+				</div>
+			</form>
+		</ul>
+	</div>
+</nav>
+
+
+<div id="myCarousel2" class="carousel slide jumbotron data-interval="500" data-ride="carousel">
+
+		<ol class="carousel-indicators">
+			<li class="active" data-target="#myCarousel2" data-slide-to="0"></li>
+			<li data-target="#myCarousel2" data-slide-to="1"></li>
+			<li data-target="#myCarousel2" data-slide-to="2"></li>
+		</ol>			
+		<div class="carousel-inner">
+			<div class="item active">
+				<img class="img-responsive center-block" width="100%" src="http://www.blirk.net/wallpapers/800x600/universe-wallpaper-2.jpg">			
+				<div class="carousel-caption">
+					<h4>Carousel Image With Caption</h4>
+				</div>
+			</div>
+			<div class="item">
+					<img class="img-responsive center-block" width="100%" src="http://www.tamurilart.com/art-gallery/fractals/800x600/birth-of-a-galaxy-800x600.jpg">	
+				
+			</div>
+			<div class="item">
+				
+					<img class="img-responsive center-block" width="100%" src="http://preview.netcarshow.com/Mercedes-Benz-SLR_McLaren-2004-800-02.jpg">
+				
+			</div>
+		</div>
+
+	<a class="left carousel-control" href="#myCarousel2" data-slide="prev">
+		<span class="icon-prev"></span>
+	</a>
+	<a class="right carousel-control" href="#myCarousel2" data-slide="next">
+		<span class="icon-next"></span>
+	</a>
+</div><!-- carousel -->
+
+
+<h1>Revisit the carousel when connected to Internet !</h1>
+
+<h1>Revisit the carousel when connected to Internet !</h1>
+
+<h1>Revisit the carousel when connected to Internet !</h1>
+
+<!-- Modal -->
+<div class="modal fade" id="textModal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+				<h4 class="modal-title">Sign-up form</h4>
+			</div>
+			<div class="modal-body">
+				<form role="form">
+					<div class="form-group">
+						<label for="inputEmail1">Email Address</label>
+						<input type="email" id="inputEmail1" class="form-control" placeholder="email address">
+					</div><!-- form group -->
+					<div class="form-group">
+						<label for="inputPassword">Password</label>
+						<input type="password" id="inputPassword" class="form-control">
+					</div>
+				</form>
+			</div><!-- modal body -->
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">
+					Close
+				</button>
+				<button type="button" class="btn btn-primary">
+					Send
+				</button>
+			</div>
+		</div><!-- modal content -->
+	</div><!-- modal dialog -->
+</div><!-- End Modal -->
+
+<div class="container">
+	<header class="page-header">
+		<h1 id="div-container">This has a div container class to bring out from left edge</h1>
+		<h2>This has a page-header class to bring down from the top edge</h2>
+		<h2 id="ul-nav">Unordered List NAV</h2>
+		<ul class="nav">
+			<li class="active">
+				<a href="#div-container">UL NAV ITEM 2</a>
+			</li>
+			<li>
+				<a href="#div-container">UL NAV ITEM 2</a>
+			</li>
+		</ul>
+	</header>
+	<header class="page-header">
+		<h2 id="ul-nav-nav-tabs">UL Nav Nav-Tabs</h2>
+		<ul class="nav nav-tabs">
+			<li class="active">
+				<a href="#ul-nav">UL NAV NAV-TABS ACTIVE</a>
+			</li>
+			<li>
+				<a href="#ul-nav">UL NAV NAV-TABS NOT-ACTIVE</a>
+			</li>
+		</ul>
+	</header>
+	<header class="page-header">
+		<h2>UL NAV NAV-PILLS</h2>
+		<ul class="nav nav-pills">
+			<li class="active">
+				<a href="#">This is Unordered List Class <strong>nav nav-pills</strong></a>
+			</li>
+			<li>
+				<a href="#">Non-Active</a>
+			</li>
+		</ul>
+	</header>
+	<header class="page-header">
+		<ul class="nav nav-pills pull-right">
+			<li class="active">
+				<a href="#">This is Unordered List Class <strong>nav nav-pills pull-right</strong></a>
+			</li>
+			<li>
+				<a href="#">Non-Active</a>
+			</li>
+		</ul>
+		<h3>H3 header</h3>
+	</header>
+	<div class="jumbotron">
+		<h1>Jumbotron h1</h1>
+		<h2>Jumbotron h2</h2>
+		<h3>Jumbotron h3</h3>
+		<p class="lead">Leading Paragraph applies a larger bottom margin</p>
+		<p>Jumbotron paragraph</p>
+		<p><a href="#">Jumbotron Hyperlink Paragraph</a></p>
+		<p><a class="btn" href="#">Button</a></p>
+		<p><a class="btn btn-default" href="#">Button default</a></p>
+		<p><a class="btn btn-success btn-lg" href="#">Button Success</a></p>
+		<p class="btn-group">
+			<a class="btn btn-warning btn-md" href="#">Button Warning - btn group item 1</a>
+			<a class="btn btn-warning btn-md" href="#">Button Warning - btn group item 2</a>
+		</p>
+		<p><a class="btn btn-danger btn-sm" href="#">Button Danger sm</a></p>
+		<p><a class="btn btn-danger btn-xs" href="#">Button xs</a></p>
+	</div><!-- jumbotron -->
+	<div class="row">
+		<div class="col-lg-4">
+			<h2>Large Breakpoint Col-lg-4</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<div class="col-lg-4">
+			<h2>Large Breakpoint Col-lg-4</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>		
+		</div>
+		<div class="col-lg-4">
+			<h2>Large Breakpoint Col-lg-4</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</div><!-- row -->
+	<div class="row">
+		<div class="col-md-4">
+			<h2>Medium Breakpoint col-md-4</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<div class="col-md-4">
+			<h2>Medium Breakpoint col-md-4</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>		
+		</div>
+		<div class="col-md-4">
+			<h2>Medium Breakpoint col-md-4</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</div><!-- row -->
+	<div class="row">
+		<div class="col-sm-4">
+			<h2>Small Breakpoint col-sm-4</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<div class="col-sm-4">
+			<h2>Small Breakpoint col-sm-4</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>		
+		</div>
+		<div class="col-sm-4">
+			<h2>Small Breakpoint col-sm-4</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</div><!-- row -->
+	<div class="row">
+		<div class="col-xs-4">
+			<h2>Extra Small Breakpoint col-xs-4</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<div class="col-xs-4">
+			<h2>Extra Small Breakpoint col-xs-4</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>		
+		</div>
+		<div class="col-xs-4">
+			<h2>Extra Small Breakpoint col-xs-4</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</div><!-- row -->
+	<hr />
+	<div class="row" id="1">
+		<div class="col-sm-6">
+			<a href="#1" class="glyphicon glyphicon-camera glyphicon-lg"></a>
+			<h2>Two Column</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<img class="img-responsive" src="http://openphoto.net/volumes/sizes/sarabbit/24563/2.jpg">
+		</div>
+		<div class="col-sm-6 hidden-xs">
+			<a href="#1" class="glyphicon glyphicon-user glyphicon-lg"></a>
+			<h2>Two Column (Hidden extra small widths)</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>		</div>
+	</div><!-- row -->
+	<hr />
+	
+	<div class="row">
+		<div class="col-md-6 yellow-box">
+			<h1>6-column yellow box</h1>
+		</div>
+		<div class="col-md-6 yellow-box">
+			<h1>6-column yellow box</h1>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-md-6 col-lg-4 yellow-box">
+			<h1>4-column at large, 6-column at medium</h1>
+		</div>
+		<div class="col-md-6 col-lg-4 yellow-box">
+			<h1>4-column at large, 6-column at medium</h1>
+		</div>
+	</div>
+	
+	
+	<div class="row">
+		<div class="col-sm-3 col-md-6 col-lg-4 yellow-box">
+			<h1>Large  : 4/8 split</h1>
+			<h1>Medium : 6/6 split</h1>
+			<h1>Small  : 3/9 split</h1>
+		</div>
+		<div class="col-sm-9 col-md-6 col-lg-8 yellow-box">
+			<h1>Large  : 4/8 split</h1>
+			<h1>Medium : 6/6 split</h1>
+			<h1>Small  : 3/9 split</h1>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-xs-6 col-sm-3 yellow-box">
+			<h1>Extra Small : 6/6</h1>
+			<h1>Small       : 3/3 </h1>
+		</div>
+		<div class="col-xs-6 col-sm-3 yellow-box">
+			<h1>Extra Small : 6/6</h1>
+			<h1>Small       : 3/3 </h1>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-xs-6 col-sm-3 yellow-box">
+			<h1 class="hidden-xs">This Width is NOT Extra Small</h1>
+			<h1 class="visible-xs">This Width Is Extra Small</h1>
+		</div>
+		<div class="col-xs-6 col-sm-3 yellow-box">
+			<h1 class="hidden-xs">This Width is NOT Extra Small</h1>
+			<h1 class="visible-xs">This Width Is Extra Small</h1>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-xs-6 col-sm-3 yellow-box">
+			<h1 class="hidden-sm">This width is NOT SMALL</h1>
+			<h1 class="visible-sm">This width is SMALL</h1>
+		</div>
+		<div class="col-xs-6 col-sm-3 yellow-box">
+			<h1 class="hidden-sm">This width is NOT SMALL</h1>
+			<h1 class="visible-sm">This width is SMALL</h1>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-xs-6 yellow-box">
+			<h1 class="hidden-md">This width is NOT MEDIUM</h1>
+			<h1 class="visible-md">This width is MEDIUM</h1>
+		</div>
+		<div class="col-xs-6 yellow-box">
+			<h1 class="hidden-md">This width is NOT MEDIUM</h1>
+			<h1 class="visible-md">This width is MEDIUM</h1>
+		</div>
+	</div>
+	
+	<div class="row" style="margin-bottom:40px;">
+		<div class="col-xs-6 yellow-box">
+			<h1 class="hidden-lg">This width is NOT LARGE</h1>
+			<h1 class="visible-lg">This width is LARGE</h1>
+		</div>
+		<div class="col-xs-6 yellow-box">
+			<h1 class="hidden-lg">This width is NOT LARGE</h1>
+			<h1 class="visible-lg">This width is LARGE</h1>
+		</div>
+	</div>
+	
+
+	<div class="panel panel-info">
+        <div class="panel-heading">
+            <h1>Alert Panel</h1>
+        </div>
+        <div class="panel-content">
+        	<div class="alert alert-success">
+        		<h2>This is a successful alert</h2>
+        	</div>
+          	<div class="alert alert-danger">
+        		<h2>This is a danger alert</h2>
+        	</div>
+          	<div class="alert alert-info">
+        		<h2>This is an information alert</h2>
+        	</div>
+          	<div class="alert alert-warning">
+        		<h2>This is a warning alert</h2>
+        	</div>
+          	<div class="alert alert-warning alert-dismissible">
+        		<h2>This is a dismissible alert
+        			<button type="button" class="close" data-dismiss="alert">
+        			<span><strong>Dismiss &nbsp; &times;<strong></span>
+        		</h2>
+        		</button>
+        	</div>
+
+        </div>
+	</div>
+
+
+
+	<div class="panel panel-info">
+  		<div class="panel-heading">
+  			<h1>Badge</h1>
+  		</div>
+  		<div class="panel-content">
+  			<div class="list-group">
+  				<div class="list-group-item">
+  					Item 1
+  				</div>
+  				<div class="list-group-item">
+ 					Item 2
+  				</div>
+  				<a class="list-group-item">
+  					
+  					<h4 class="list-group-item-heading">Header&nbsp;&nbsp;<span class="badge">474</span></h4>
+  					<p class="list-group-item-text">Text</p>
+  				</a>
+  			</div>
+  		</div>
+  	</div>
+
+
+
+
+
+
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h1>Breadcrumb</h1>
+		</div>
+		<div class="panel-content">
+			<ul class="breadcrumb">
+				<li><a href="#">Level 1</a></li>
+				<li><a href="#">Level 2</a></li>
+				<li><a href="#">Level 3</a></li>
+				<li>You are here</li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h1>Button : btn-block : Block Across Full Width</h1>
+		</div>
+		<a href="#">
+			<button type="button" class="btn btn-block btn-info">
+				Button At Block-Width
+			</button>
+		</a>
+	</div>
+	
+	<hr />
+
+	<div class="panel panel-info">
+	
+		<div class="panel-heading">
+			</h1>Blockquote</h1>
+		</div>
+		
+		<div class="panel-content">
+			<p>Standard Text</p>
+
+				<blockquote class="blockquote">BlockQuote Text</blockquote>
+
+				<blockquote class="blockquote-reverse">BlockQuote Reverse Text</blockquote>
+			</p>
+		</div>	
+	</div>
+
+	
+	
+	<hr />
+	
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h1>Buttons</h1>
+		</div>
+		<div class="panel-content">
+			<button type="button" class="btn btn-default">
+				Default Button
+			</button>
+			
+			<button type="button" class="btn btn-default active">
+				Default Active Button
+			</button>
+
+			<button type="button" class="btn btn-default disabled">
+				Default Disabled Button
+			</button>
+
+			<a href="#">
+				<button type="button" class="btn btn-info">
+					Button As Hyperlink
+				</button>
+			</a>
+			<button type="button" class="btn btn-link">
+				Button as a link
+			</button>
+		</div>
+	</div>
+
+
+
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h1>Code</h1>
+		</div>
+		<div class="panel-content">
+			<h2>
+				<code>This is code</code>
+			</h2>
+			<h2>
+				<var>This is a variable</var>
+			</h2>
+			<pre>This is pre where code is displayed inside a grey border</pre>
+			<h2>
+				<kbd>Highlight This On The Keyboard With kbd</kbd>
+			</h2>
+			<h2>
+				<samp>sampasdfasdf</samp>
+			</h2>
+		</div>
+	</div>
+
+	
+	<div class="panel panel-info">
+		<div class="panel-heading panel-custom-color">
+			<h1 class="panel-custom-color" style="padding:20px;">Clearfix</h1>		
+		</div>
+		<div class="panel-content">
+			<div class="row">
+				<div class="col-sm-3">
+					<h2>Column 1</h2>
+				</div>
+				<div class="col-sm-3">
+					<h2>Columnn 2 Before Clearfix</h2>
+				</div>
+				<div class="clearfix">
+				</div>
+				<div class="col-sm-3">
+					<h2>After Clearfix</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<hr />
+
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h1>Container Fixed : Resize At Breakpoints</h1>
+		</div>
+	</div>
+	<h1>Container-Fixed text Container-Fixed text Container-Fixed text Container-Fixed text Container-Fixed text Container-Fixed text Container-Fixed text</h1>
+	</div>
+</div><!-- container -->
+<hr />
+<div class="container-fluid">
+
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h1>Container Fluid : Constant Resizing</h1>
+		</div>
+	</div>
+	
+	<h1>Container-Fluid text Container-Fluid text Container-Fluid text Container-Fluid text Container-Fluid text Container-Fluid text Container-Fluid text </h1>
+</div>
+
+
+<div class="container">
+
+
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h1>Description Lists dl, Title dt and Detail dd</h1>
+		</div>
+		<div class="panel-content">
+			<h2>
+				<dl>
+					<dt>Description Title</dt>
+					<dd>Description Detail</dd>
+					<dt>Description Title</dt>
+					<dd>Description Detail</dd>
+				</dl>
+
+				<dl class="dl-horizontal">
+					<dt>Description Title For Horizontal List</dt>
+					<dd>Description Detail For Horizontal List</dd>
+					<dt>Description Title For Horizontal List</dt>
+					<dd>Description Detail For Horizontal List</dd>
+				</dl>
+			</h2>
+		</div>
+	</div>
+
+
+
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h1>Dropdown Menu</h1>
+		</div>
+		<div class="panel-content">
+			<ul class="nav nav-tabs">
+				<li>
+					<a href="#">Home</a>
+				</li>
+				<li>
+					<a href="#">One</a>
+				</li>
+				<li>
+					<a href="#">Two</a>
+				</li>
+			
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown Menu<span class="caret"></a>
+					<ul class="dropdown-menu">
+						<li class="dropdown-header">Submenu header
+						</li>
+						<li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li class="divider"></li>
+						<li class="dropdown-header">Submenu header
+						</li>
+						<li><a href="#" tabindex="-1">3</a></li>
+						<li class="disabled">
+							<a href="#">4 Disabled Link Item</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<div class="btn-group">
+						<button class="btn btn-success" type="button">
+							Dropdown Button Split
+						</button>
+						<button class="btn btn-success dropdown-toggle" type="button" id="dropdown01" data-toggle="dropdown">
+							<span class="caret"></span>
+						</button>
+					<ul class="dropdown-menu">
+						<li class="dropdown-header">Submenu header
+						</li>
+						<li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li class="divider"></li>
+						<li class="dropdown-header">Submenu header
+						</li>
+						<li><a href="#" tabindex="-1">3</a></li>
+						<li class="disabled">
+							<a href="#">4 Disabled Link Item</a>
+						</li>
+					</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="panel-heading">
+		<h1> </h1>
+		</div>
+	</div><!-- panel -->	
+
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h1>File Chooser</h1>
+		</div>
+		<div class="panel-content">
+			<label class="file">
+				<input type="file">
+				<span class="file-custom"></span>
+			</label>
+		</div>
+	</div>
+	
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h1>Footer</h1>
+		</div>
+		<div class="panel-content">
+			<p>&copy; 2013 Two Lights Studio</p>
+			<footer>Footer Text</footer>
+		</div>
+	</div>
+	<hr />
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h1>Form Validation</h1>
+		</div>
+	</div>
+	<form role="form" id="form1" method="post" class="form-horizontal" style="background-color:#9CC4E4">
+		<div class="form-group">
+			<label class="col-sm-5 col-sm-offset-1 control-label"><h3>Please enter your details</h3></label>
+		</div>
+		<div class="form-group">
+			<label class="col-lg-3 control-label">Username</label>
+			<div class="col-lg-5">
+				<input type="text" class="form-control" required name="username" />
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-3 control-label">Email</label>
+			<div class="col-sm-5">
+				<input type="email" class="form-control" required name="email" />					
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-3 control-label">Password</label>
+			<div class="col-sm-5">
+				<input type="password" class="form-control" required name="password" />
+			</div>
+		</div>
+		<div class="col-sm-offset-1">
+				<div class="form-group col-sm-2">
+					<label class="control-label" for="salutation">Salutation :</label>
+					<select class="form-control" id="salutation" name="salutation">
+						<option label="Mr." />
+						<option label="Mrs." />
+					</select> 
+				</div>
+
+				<div class="form-group col-sm-5">
+					<label class="control-label" for="fname">First Name :</label>
+					<input class="form-control" type="text" id="fname" name="fname" />
+				</div>
+
+
+				<div class="form-group col-sm-5">
+					<label class="control-label" for="lname">Last Name :</label>
+					<input class="form-control" type="text" id="lname" name="lname" />
+				</div>
+		</div><!-- offset -->
+		<div class="col-sm-offset-1">
+			<div class="form-group col-sm-12">
+				<label class="control-label" for="emailaddress">Email</label>
+				<input class="form-control" id="emailaddress" name="emailaddress" type="text" />
+				<span class="help-block">
+					This is class="help-block" to give help and advice to people about to enter in the email address
+				</span>
+			</div>
+		</div>
+		<div class="col-sm-offset-1">
+			<div class="form-group col-sm-12">
+				<label class="control-label" for="emailaddress">Email</label>
+				<input class="form-control input-lg" id="emailaddress" name="emailaddress" type="text" placeholder="This is a large-height input element"/>
+				<span class="help-block">
+					This is class="help-block" to give help and advice to people about to enter in the email address
+				</span>
+			</div>
+		</div>
+		<div class="col-sm-offset-1">
+			<div class="form-group">
+				<div class="radio-inline">
+					<label>
+						<input type="radio" name="membership" value="gold" />Gold member
+					</label>
+				</div>
+				<div class="radio-inline">
+					<label>
+						<input type="radio" name="membership" value="silver" />Silver member
+					</label>
+				</div>
+				<div class="radio-inline">
+					<label>
+						<input type="radio" name="membership" value="bronze" />Bronze member
+					</label>
+				</div>
+				<div class="radio-inline">
+					<label>
+							<input type="radio" disabled />Disable Me
+					</label>
+				</div>
+			</div>
+		</div><!-- offset -->
+		<div class="col-sm-offset-1">
+			<div class="form-group">
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" name="membership" value="gold" />Gold member
+					</label>
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" name="membership" value="silver" />Silver member
+					</label>
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" name="membership" value="bronze" />Bronze member
+					</label>
+				</div>
+			</div>
+		</div><!-- offset -->
+		<div class="col-sm-offset-1">
+			<div class="form-group col-sm-12">
+				<label class="control-label">Static Control</label>
+				<p class="form-control-static">Static text</p>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-sm-6 col-sm-offset-2">
+				<button type="submit" class="btn btn-primary pull-right">
+					Sign Up
+				</button>
+			</div>
+		</div>
+	</form>
+	<form class="form-inline" style="backround-color:">
+	</form>
+
+	</hr />			
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h1>Fluid Layout with class="span2" only Bootstrap 2</h1>
+		</div>
+	</div>
+	<hr />
+	<div>
+		<h1>Glyphicon - Large With Text - Search</h1>
+		<a href="#" class="btn btn-info btn-lg">
+			<span class="glyphicon glyphicon-search"></span>
+			Search
+		</a>
+	</div>
+
+
+
+	
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h1>Images</h1>
+		</div>
+		<div class="panel-content">
+			<img class="img-responsive center-block" width="50%" src="http://www.blirk.net/wallpapers/800x600/universe-wallpaper-2.jpg" />
+
+
+			<img class="img-responsive img-rounded" width="50%" src="http://www.blirk.net/wallpapers/800x600/universe-wallpaper-2.jpg" />
+			
+
+			<img class="img-responsive img-thumbnail" width="50%" src="http://www.blirk.net/wallpapers/800x600/universe-wallpaper-2.jpg" />
+			
+
+			<img class="img-responsive img-circle" width="50%" src="http://www.blirk.net/wallpapers/800x600/universe-wallpaper-2.jpg" />
+			
+
+
+		</div>	
+	</div>
+	
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h1>Input-Group and Input-Group-Addon</h1>
+		</div>
+		<div class="panel-content" style="height:50px;">
+			<form>
+				<div class="form-group">
+					<label for="test" class="col-sm-1 control-label">Test</label>
+					<div class="col-sm-2">
+						<div class="input-group">
+							<input class="form-control" type="number" id="test"/>
+							<span class="input-group-addon">This is the input-group-addon</span>
+						</div>
+					</div>					
+				</div>
+			</form>
+		</div>
+	</div>
+	
+	<div class="panel panel-info">
+
+		<div class="panel-heading">
+			<h1>Labels</h1>
+		</div>
+
+		<div class="panel-content">
+			<h3>
+				<span class="label label-success">Label Success</span>
+				<span class="label label-info">Label Info</span>
+
+				<span class="label label-primary">Label Primary</span>
+
+				<span class="label label-warning">Label Warning</span>
+
+				<span class="label label-danger">Label Danger</span>
+
+			</h3>
+		</div>
+
+	</div>
+
+	<div class="panel panel-info">
+	
+		<div class="panel-heading">
+			<h1>Lead text</h1>
+		</div>
+		
+		<div class="panel-content">
+			<p>Standard Text</p>
+			<p class="lead">Lead Text</p>
+		</div>	
+	</div>
+	
+	
+	<hr />
+	
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h1>Lists</h1>
+		</div>
+
+
+		<div class="panel-content">
+			<ol>
+				<li>One</li>
+				<li>Two</li>
+			</ol>
+			<ul>
+				<li>One</li>
+				<li>Two</li>
+			</ul>
+			<ul class="list-unstyled">
+				<li>Unstyled 1</li>
+				<li>Unstyled 2</li>
+			</ul>
+		</div>
+	</div>
+	
+	
+	<div class="panel panel-info">
+  		<div class="panel-heading">
+  			<h1>List Group</h1>
+  		</div>
+  		<div class="panel-content">
+  			<div class="list-group">
+  				<div class="list-group-item">
+  					Item 1
+  				</div>
+  				<div class="list-group-item">
+ 					Item 2
+  				</div>
+  				<a class="list-group-item active">
+  					Item 3 Active
+  				</a>
+  				<a class="list-group-item disabled">
+  					Item 4 Disabled
+  				</a>
+  				<a class="list-group-item list-group-item-success">
+  					Item 5 Success
+  				</a>
+  				<a class="list-group-item list-group-item-warning">
+  					Item 6 Warning
+  				</a>
+  				<a class="list-group-item list-group-item-danger">
+  					Item 7 Danger
+  				</a>
+  				<a class="list-group-item">
+  					<span class="badge">474</span>
+  					<h4 class="list-group-item-heading">Header</h4>
+  					<p class="list-group-item-text">Text</p>
+  				</a>
+  			</div>
+  		</div>
+  		<div class="panel-heading">
+  			<h1>List Group With ul</h1>
+  		</div>
+  		<div class="panel-content">
+  			<ul class="list-group">
+  				<li class="list-group-item">
+  					Item 1
+  				</li>
+  				<li class="list-group-item">
+ 					Item 2
+  				</li>
+  				<li class="list-group-item">
+  					Item 3
+  				</li>
+  				<li class="list-group-item">
+  					Item 4
+  				</li>
+  			</ul>
+  		</div>
+	</div>
+
+
+
+
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h1>Modal</h1>
+		</div>
+		<a href="#">
+			<button type="button" class="btn btn-block btn-info" data-toggle="modal" data-target="#modal1">
+				Click Here To Open Modal Pop-Up
+			</button>
+		</a>
+	</div>
+	
+	<div class="modal fade" id="modal1" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Modal Title</h4>
+				</div>
+				<div class="modal-body">
+					Modal Body
+				</div>
+				<div class="modal-footer">
+					<h4>Modal Footer</h4>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>		
+	
+	
+	<hr />
+	
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h1>Modal 02 (Can Show At Page Load)</h1>
+		</div>
+		<div class="panel-content">
+			<button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-02">Click here to open modal</button>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modal-02" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<h2>This is the modal!</h2>
+			</div>
+		</div>
+	</div>
+
+	<!-- UNCOMMENT THIS TO SHOW MODAL AT PAGE LOAD 
+	<script>
+	$('#modal-02').modal('show');
+	</script>
+				-->
+
+
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h1>Nav-Pills</h1>
+		</div>
+		<div class="panel-content">
+			
+			<ul class="nav nav-pills">		
+				<li><a href="#">One</a></li>
+				<li><a href="#">Two</a></li>
+				<li class="active"><a href="#">Three</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<hr />
+		<div class="panel panel-info">
+		<div class="panel-heading">
+			<h1>Nav-Pills Nav-Stacked</h1>
+		</div>
+		<div class="panel-content">
+			
+			<ul class="nav nav-pills nav-stacked">		
+				<li><a href="#">One</a></li>
+				<li><a href="#">Two</a></li>
+				<li class="active"><a href="#">Three</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h1>Nav-Stacked</h1>
+		</div>
+		<div class="panel-content">
+			
+			<ul class="nav nav-stacked">		
+				<li><a href="#">One</a></li>
+				<li><a href="#">Two</a></li>
+				<li class="active"><a href="#">Three</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h1>Nav-Tabs Menu</h1>
+		</div>
+		<div class="panel-content">
+		
+			<ul class="nav nav-tabs">
+				<li>
+					<a href="#">Home</a>
+				</li>
+				<li>
+					<a href="#">One</a>
+				</li>
+				<li class="active">
+					<a href="#">Two</a>
+				</li>
+			</ul>
+		</div>
+		<div class="panel-heading">
+		
+		</div>
+	</div>
+	
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h1>Pager</h1>
+		</div>
+		<div class="panel-content">
+			<ul class="pager">
+				<li><a href="#">&laquo; Previous</a></li>
+				<li><a href="#">&raquo; Next</a></li>
+			</ul>
+			<ul class="pager">
+				<li class="previous"><a href="#">&laquo; Previous</a></li>
+				<li class="next"><a href="#">&raquo; Next</a></li>
+			</ul>
+		</div>
+		<div class="panel-heading">
+			<h1>Pagination &raquo is Right Angled Quote</h1>
+		</div>
+		<div class="panel-content" style="margin-left:20px;">
+			<ul class="pagination">
+				<li><a href="#">first</a></li>
+				<li><a href="#">&laquo</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">&raquo</a></li>
+				<li><a href="#">last</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="panel panel-info">
+        <div class="panel-heading">
+        	<h1>Panel Default</h1>
+        </div>
+        <div class="panel-content">
+        	<div class="panel panel-default">
+        		<div class="panel-body">
+        			Panel body text
+        		</div>
+        	</div>
+        </div>
+	</div>
+
+
+	<div class="panel panel-info">
+        <div class="panel-heading">
+        	<h1>Panel With Buttons</h1>
+        </div>
+        <div class="panel-content">
+        	<div class="panel panel-primary">
+        		<div class="panel-heading">
+        			<button class="btn btn-default pull-right">
+        				Button Text
+        			</button>
+        			<h4>Panel Heading</h4>
+        		</div>
+        		<div class="panel-body">
+        			Panel body
+        		</div>
+        		<div class="panel-footer">
+        			<button class="btn btn-default pull-right">
+        				See more &raquo;
+        			</button>
+        			Panel footer
+        			<div class="clearfix"></div>
+        		</div>
+        	</div>
+        </div>
+	</div>
+
+
+
+
+	<div class="panel-group" id="accordion">
+		<div class="panel panel-info">
+			<div class="panel-heading">
+				<h1>Panels - Collapsable</h1>
+			</div>
+			<div class="panel-content">
+
+			</div>
+		</div>
+	
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a href="#collapse1" data-toggle="collapse" data-parent="#accordion">
+						<button type="button" class="btn btn-primary btn-block">
+						Collapsable Panel Title - Click Here
+						</button>
+					</a>
+				</h4>
+			</div>
+			<div id="collapse1" class="panel-collapse collapse in">
+				<div class="panel-body">
+					<p>This is the panel body content</p>
+				</div>
+			</div>
+		</div>
+	</div><!-- panel group accordion -->
+	
+	<div class="panel-group" id="panel-group-01">
+		<div class="panel panel-info">
+			<div class="panel-heading">
+				<h1>Collapsing Panel with changing text</h1>
+			</div>
+		</div>
+		<div class="panel panel-primary">
+			<div class="panel-heading" style="cursor: pointer;" data-toggle="collapse" data-target="#collapsableList">
+				<h2>
+					<span id="colMark">This changes &raquo;&raquo;&raquo;</span>
+					Top Divers Of The Month
+				</h2>
+				<div class="list-group collapse" id="collapsableList">
+					<ul>
+						<li>one</li>
+						<li>two</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script>
+			$('#collapsableList').on('hide.bs.collapse',function(){
+				$('#colMark').html('This changes &raquo;&raquo;&raquo;');
+			});
+			$('#collapsableList').on('show.bs.collapse',function(){
+				$('#colMark').html('...to this...&laquo;&laquo;&laquo;');
+			});
+		</script>
+	</div>
+	
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h1>Popover</h1>
+		</div>
+		<div class="panel-content">
+			<button type="button" class="btn btn-default" title="Popover Title"
+					data-container="body" 
+					data-toggle="popover"
+					data-placement="left"
+					data-content="Popover On The Left"
+					data-trigger="focus">
+					Left Popover
+			</button>
+			<button type="button" class="btn btn-success" 
+					title="Popover Title On The Top"
+					data-container="body"
+					data-toggle="popover"
+					data-placement="top"
+					data-content="Popover Text On The Top">
+					Popover Above
+			</button>
+			<button type="button" class="btn btn-warning"
+					title="Popover Plus Alert"
+					data-container="body"
+					data-toggle="popover"
+					data-content="Popover Plus Alert">
+					Popover Plus Alert
+			</button><!-- can add in  "popover-show" -->
+		</div>	
+		<script>
+		  $(function(){
+		  	$("[data-toggle='popover']").popover();
+		  	$('.popover-show').popover('show');
+		  	$('.popover-show').on('shown.bs.popover',
+		  			function(){
+		  				alert("Popover Alert");
+		  			}
+		  			);
+		  });
+		</script>
+	</div>
+	<hr />
+
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h1>Progress Bars</h1>
+		</div>
+		<div class="panel-content">
+			<div class="progress">
+			</div>
+			<div class="progress">
+				<div class="progress-bar" 
+					role="progressbar"
+					style="width:0%;">		
+					0%
+				</div> 
+				  &nbsp;(This is showing a minimum width has been set so even thought it's zero percent, the width is still finite in order to let the value be shown)
+			</div>
+			<div class="progress">
+				<div class="progress-bar" 
+					role="progressbar"
+					style="width:2%;">		
+					2%
+				</div> 
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-info" 
+					role="progressbar"
+					style="width:20%;">		
+					20%
+				</div> 
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-success" 
+					role="progressbar"
+					style="width:30%;">	
+					30%	
+				</div> 
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-warning progress-bar-striped" 
+					role="progressbar"
+					style="width:40%;">	
+					40%	
+				</div>
+				&nbsp;Striped 
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-warning progress-bar-striped active" 
+					role="progressbar"
+					style="width:40%;">	
+					40%	
+				</div> 
+				&nbsp;Striped But Animated As Well
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-danger" 
+					role="progressbar"
+					style="width:70%;">		
+					CPU : 70%
+				</div> 
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-success" 
+					role="progressbar"
+					style="width:30%;">	
+					30%	
+				</div> 
+				<div class="progress-bar progress-bar-danger" 
+					role="progressbar"
+					style="width:70%;">		
+					70%
+				</div> 
+			</div>
+		</div>
+	</div>
+
+	<div class="panel panel-info">
+	  <div class="panel-heading">
+	    <h1>Select Form Item</h1>
+	  </div>
+	  <div class="panel-content">
+	  	<select class="form-control">
+	  		<option>Yes</option>
+	  		<option>No</option>
+	  	</select>
+	  </div>
+	</div>
+
+
+
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h1>Tabbed Panes produced by Nav-Pills</h1>
+		</div>
+		<div class="panel-content">
+			<ul class="nav nav-pills">
+				<li class="active">
+					<a href="#pill01" data-toggle="tab">
+						Pill 01
+					</a>
+				</li>
+				<li class="nav nav-pills">
+					<a href="#pill02" data-toggle="tab">
+						Pill 02
+					</a>
+				</li>
+			</ul>
+			<div class="tab-content" style="margin-left:20px;">
+				<div class="tab-pane active" id="pill01">
+					<h4>Pill 01 Header</h4>
+					<p>Pill 01 Content</p>
+				</div>
+				<div class="tab-pane" id="pill02">
+					<h4>Pill 02 Header</h4>
+					<p>Pill 02 Content</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h1>Tabbed Panes produced by Nav-Tabs (with fade)</h1>
+		</div>
+		<div class="panel-content">
+			<ul class="nav nav-tabs">
+				<li class="active">
+					<a href="#tab01" data-toggle="tab">
+						Tab 01
+					</a>
+				</li>
+				<li>
+					<a href="#tab02" data-toggle="tab">
+						Tab 02
+					</a>
+				</li>
+			</ul>
+			<div style="padding-left:20px;" class="tab-content">
+				<div class="tab-pane active fade in" id="tab01">
+					<h4>Tab 01</h4>
+					<p>Tab 01 content</p>
+				</div>
+				<div class="tab-pane fade" id="tab02">
+					<h4>Tab 02</h4>
+					<p>Tab 02 content</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h1>Table</h1>
+			<h2>COLGROUP ASSIGNS CLASSES TO EACH COLUMN</h2>
+		</div>
+		<div class="panel-content">
+			<table class="table table-bordered table-striped table-hover">
+				<colgroup>
+					<col class="image" />
+					<col class="name"  />
+					<col class="descr" />
+				</colgroup>
+				<thead>
+					<tr>
+						<th>Image</th>
+						<th class="active">Name</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><img src="" width="150" height="100" /></td>
+						<td>Powder Blue Sturgeon</td>
+						<td>Description</td>
+					</tr>
+
+					<tr>
+						<td><img src="" width="150" height="100" /></td>
+						<td>Powder Blue Sturgeon</td>
+						<td>Description</td>
+					</tr>
+					<tr>
+						<td><img src="" width="150" height="100" /></td>
+						<td>Powder Blue Sturgeon</td>
+						<td>Description</td>
+					</tr>
+					<tr>
+						<td><img src="" width="150" height="100" /></td>
+						<td>Powder Blue Sturgeon</td>
+						<td>Description Description Description Description Description Description Description </td>
+					</tr>
+					<tr class="success">
+						<td><img src="" width="150" height="100" /></td>
+						<td>Powder Blue Sturgeon</td>
+						<td>Description</td>
+					</tr>
+
+					<tr class="info">
+						<td><img src="" width="150" height="100" /></td>
+						<td>Powder Blue Sturgeon</td>
+						<td>Description</td>
+					</tr>
+					<tr class="warning">
+						<td><img src="" width="150" height="100" /></td>
+						<td>Powder Blue Sturgeon</td>
+						<td>Description</td>
+					</tr>
+					<tr class="danger">
+						<td><img src="" width="150" height="100" /></td>
+						<td>Powder Blue Sturgeon</td>
+						<td>Description Description Description Description Description Description Description </td>
+					</tr>
+				</tbody>	
+			</table>
+		</div>
+	</div>
+
+
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h1>Text Alignment</h1>
+		</div>
+		<div class="panel-content">
+			<div class="row">
+				<div class="col-sm-4 col-sm-offset-4">
+					<p class="text-left">
+						Text Left Aligned
+					</p>
+
+					<p class="text-center">
+						Text Center Aligned
+					</p>
+
+					<p class="text-right">
+						Text Right Aligned
+					</p>
+					<p class="text-justify">
+						Text justified on both sides Text justified on both sides Text justified on both sides Text justified on both sides Text justified on both sides Text justified on both sides Text justified on both sides Text justified on both sides Text justified on both sides 
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h1>TextArea</h1>
+		</div>
+		<div class="panel-content">
+			<form>
+				<textarea class="form-control" rows="3" placeholder="textarea"></textarea>
+			</form>
+		</div>
+	</div>
+	
+	
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h1>Text UPPER, lower case, Capitalised</h1>
+		</div>
+		<div class="panel-content">
+			<div class="row">
+				<div class="col-sm-4 col-sm-offset-4">
+					<p class="text-lowercase">
+						Text Lowercase
+					</p>
+
+					<p class="text-uppercase">
+						Text Uppercase
+					</p>
+
+					<p class="text-capitalize">
+						every word is capitalised
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	
+	<div class="panel panel-info">
+
+		<div class="panel-heading">
+			<h1>Themes</h1>
+		</div>
+
+		<div class="panel-content">
+		  <div class="row">
+		  	<div class="col-sm-8 col-sm-offset-1">
+					<h3>
+						<p class="text-primary">
+							Primary
+						</p>
+						<p class="text-success">
+							Success
+						</p>
+						<p class="text-info">
+							Info
+						</p>
+						<p class="text-warning">
+							Warning
+						</p>
+						<p class="text-danger">
+							Danger
+						</p>
+						<p class="text-primary bg-primary">
+							Primary Back
+						</p>
+						<p class="text-success bg-success">
+							Success Back
+						</p>
+						<p class="text-info bg-info">
+							Info Back
+						</p>
+						<p class="text-warning bg-warning">
+							Warning Back
+						</p>
+						<p class="text-danger bg-danger">
+							Danger Back
+						</p>
+					</h3>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h1>Toolbar</h1>
+		</div>
+		<div class="panel-content">
+			<div class="btn-toolbar">
+				<div class="btn-group">
+					<a href="#">
+						<button type="button" class="btn btn-success">
+							<span class="glyphicon glyphicon-ok"></span>
+							Save Item
+						</button>
+					</a>
+					<a href="#">
+						<button class="btn btn-danger" type="button">
+							<span class="glyphicon glyphicon-remove"></span>
+							Delete Item
+						</button>
+					</a>				
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h1>Tooltip</h1>
+		</div>
+		<div class="panel-content">
+			---
+			<a href="#" class="tooltip-test" data-toggle="tooltip" title="Right Tooltip" data-placement="right">Default Tooltip</a>
+			---
+			<a href="#" class="tooltip-test" data-toggle="tooltip" data-placement="left" title="Left Tooltip">Left Tooltip</a>
+			---
+			<a href="#" data-toggle="tooltip" data-placement="top" title="Top Tooltip">Top Tooltip</a>
+			---
+			<button type="button" class="btn btn-default" data-toggle="tooltip" title="Tooltip">Default Tooltip</button>
+		</div>
+	</div>
+	
+	<script>
+		$(function(){$("[data-toggle='tooltip']").tooltip();});
+	</script>
+		
+	<hr />
+
+</div><!-- container -->
+<div class="container-fluid">
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h1>Validation - has warning / success / error</h1>
+		</div>
+		<div class="panel-content">
+			<form class="">
+
+				<div class="form-group col-sm-2">
+					<label class="control-label">Input Regular</label>
+					<input class="form-control" />
+				</div>
+
+				<div class="form-group col-sm-2 has-success">
+					<label class="control-label">Input Has Success</label>
+					<input class="form-control" />
+				</div>
+
+				<div class="form-group col-sm-2 has-warning">
+					<label class="control-label">Input Has Warning</label>
+					<input class="form-control" />
+				</div>
+
+				<div class="form-group col-sm-2 has-error">
+					<label class="control-label">Input Has Error</label>
+					<input class="form-control" />
+				</div>
+
+				<div class="form-group col-sm-2 has-error has-feedback">
+					<label class="control-label">Input Has Error</label>
+					<input class="form-control" />
+					<span class="glphicon glyphicon-remove form-control-feedback"></span>
+				</div>
+			</form>
+		</div>
+		<div class="panel-heading">
+			&nbsp;
+		</div>
+
+		<div class="panel-heading">
+			&nbsp;
+		</div>
+	</div>
+	<hr />
+	<hr />
+	<div class="row">
+		<div class="panel panel-info">
+			<div class="panel-heading">
+				<h1>visible-xx-inline, visible-xx-block, visible-xx-inline-block</h1>
+			</div>
+			<div class="panel-content">
+				
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-3 visible-xs-inline visible-sm-block card">
+			visible-xs-inline visible-sm-block
+		</div>
+		<div class="col-sm-3 visible-xs-inline-block visible-sm-block card">
+			visible-xs-inline-block visible-sm-block
+		</div>
+		<div class="col-sm-3 visible-xs-inline visible-sm-block card">
+			visible-xs-inline visible-sm-block
+		</div>
+		<div class="col-sm-3 card">
+			Class="card"
+		</div>
+	</div><!-- row -->
+</div><!-- container fluid -->
+
+<div class="container">	
+
+	<div class="panel panel-info">
+        <div class="panel-heading">
+            <h1>Well (which are like side-notes with extra padding)</h1>
+        </div>
+        <div class="panel-content">
+        	<div class="well">
+        		<h1>Well header</h1>
+        		<p>Well text</h1>
+        	</div>
+        	<div class="well well-sm">
+        		<h1>Small Well header</h1>
+        		<p>Well text</h1>
+           	</div>
+        	<div class="well well-lg">
+        		<h1>Large Well header</h1>
+        		<p>Well text</h1>
+        	</div>
+        </div>
+	</div>
+
+	<hr />
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h1>CSS Font Size EM</h1>
+		</div>
+		<div class="panel-content">
+			<p style="font-size:10em;">
+				10em
+			</p>
+			<p style="font-size:5em;">
+				5em
+			</p>
+			<p style="font-size:3em;">
+				3em
+			</p>
+			<p style="font-size:2em;">
+				2em
+			</p>
+			<p style="font-size:1em;">
+				1em
+			</p>
+		</div>
+	</div>
+	
+	<hr />
+	
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h1>CSS Font Size PX Pixels</h1>
+		</div>
+		<div class="panel-content">
+			<p style="font-size:100px;">
+				100px
+			</p>
+			<p style="font-size:50px;">
+				50px
+			</p>
+			<p style="font-size:30px;">
+				30px
+			</p>
+			<p style="font-size:20px;">
+				20px
+			</p>
+			<p style="font-size:10px;">
+				10px
+			</p>
+			<p style="font-size:5px;">
+				5px
+			</p>
+		</div>
+	</div>
+	
+	
+	<hr />
+	
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h1>CSS Font Size VW (% Of Viewport Width)</h1>
+		</div>	
+		<div class="panel-content">
+			<p style="font-size:10vw;">
+				10% size
+			</p>		
+			<p style="font-size:5vw;">
+				5% size of window width
+			</p>
+			<p style="font-size:3vw;">
+				This text is 3% of the size of the width of the window
+			</p>
+			<p style="font-size:2vw;">
+				This text is 2% of the size of the width of the window
+			</p>
+			<p style="font-size:1.5vw;">
+				This text is 1.5% of the size of the width of the window
+			</p>
+			<p style="font-size:1vw;">
+				This text is 1% of the size of the width of the window
+			</p>
+		</div>
+	</div>
+</div><!--container-->
+
+
+<!-- Latest compiled and minified JavaScript -->
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
