@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>02</title>
+	<link href="assets/css/bootstrap.css" rel="stylesheet" />
+	<style>
+		div.col-md-4, div.col-md-2, div.col-sm-3{
+			background: rgb(230,230,230);
+			padding:3vh 2vw;
+			margin:2vh 0;
+		}
+		div.col-md-12{
+			background: rgb(200,200,200);
+			margin-bottom:0vh;
+			text-align: center;
+		}
+		form{
+			background: rgb(225,225,225);
+			border:2px solid rgb(200,200,200);
+			padding:2vh 2vw;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Bootstrap in 10 Mins v2</h1>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="col-md-12 well">
+					Column
+				</div> 
+			</div>
+			<div class="col-md-4">
+				<div class="col-md-12 well">
+					Column
+				</div> 
+			</div>
+			<div class="col-md-4">
+				<div class="col-md-12 well">
+					Column
+				</div> 
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-2">Column</div>
+			<div class="col-md-2">Column</div>
+			<div class="col-md-2">Column</div>
+			<div class="col-md-4">Column</div>
+			<div class="col-md-2">Column</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-3">Column</div>
+			<div class="col-sm-3">Column</div>
+			<div class="col-sm-3">Column</div>
+			<div class="col-sm-3">Column</div>
+		</div>
+	</div> <!--container-->
+	<form class="container">
+		<div class="form-group row">
+			<label for="input01" class="col-sm-2 col-form-label col-form-label-sm">Name : </label>
+			<div class="col-sm-10">
+				<input class="form-control form-label-sm" id="input01" type="text" />
+			</div>
+		</div>
+		<div class="form-group row">
+			<div class="col-sm-2 pull-right"></div>
+			<div class="pull-right">
+				<button type="submit" class="form-control btn btn-primary">Submit</button>
+			</div>
+		</div>
+	</form>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+</body>
+</html>
